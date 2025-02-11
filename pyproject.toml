@@ -1,0 +1,21 @@
+[project]
+name = "graph-rag-tutos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=0.28.1",
+    "langchain>=0.3.18",
+    "langchain-community>=0.3.17",
+    "langchain-huggingface>=0.1.2",
+    "langchain-mistralai>=0.2.6",
+    "langchain-neo4j>=0.3.0",
+    "langchain-openai>=0.3.4",
+    "neo4j>=5.28.1",
+    "openai>=1.61.1",
+    "python-dotenv>=1.0.1",
+    "sentence-transformers>=3.4.1",
+    "smolagents>=1.8.1",
+    "tiktoken>=0.8.0",
+]
