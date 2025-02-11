@@ -6,7 +6,6 @@ I just followed a tutorial to create a RAG agent working with a neo4j DB.
 
 The added value of this repo is: 
 - I updated the code (imports/API usage were outdated)
-- I added support for open source models
 - They created an agent with the deprecated langchain's agent object, whereas I created the agent with Huggingface's smolagents.
 - Its simplicity.
 
@@ -36,6 +35,11 @@ MISTRAL_API_KEY=
 ```
 
 Run the _1_connect.py script to ensure connection to db works.
+
+**About the models**:
+- I use mistral AI API to perform inference (it can easily be embedded as a langchain inference object)
+- I use HF API to run the agent
+- I use sentence-transformers' "all-MiniLM-L6-v2" model to perform text embedding locally 
 
 ## 3. Create a new Python env
 
